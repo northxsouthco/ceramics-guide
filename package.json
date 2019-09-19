@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-react-bootstrap",
   "private": true,
-  "description": "A starter that includes and configures react-bootstrap and react-icons, along with SASS handling. ",
+  "description": "Resources for MCC ceramics students, based on gatsby-starter-react-bootstrap ",
   "version": "0.1.0",
-  "author": "Billy Jacoby <billyjacoby@gmail.com>",
+  "author": "Stephy Miehle <stephy@northxsouth.co>",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gatsby": "^2.3.34",
@@ -42,10 +42,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/blindingstars/ceramics-guide"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "homepage": "https://billyjacoby.github.io/gatsby-react-bootstrap-starter/"
+  "homepage": "https://github.com/blindingstars/ceramics-guide"
 }

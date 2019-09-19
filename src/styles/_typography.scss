@@ -1,0 +1,20 @@
+p {
+  svg {
+    vertical-align: text-bottom;
+  }
+}
+
+.text-uppercase {
+  letter-spacing: 0.05em;
+}
+
+.pullquote {
+  font-size: 2em;
+  font-style: italic;
+
+  cite {
+    font-style: normal;
+    @extend .text-uppercase;
+    font-size: 0.75em;
+  }
+}

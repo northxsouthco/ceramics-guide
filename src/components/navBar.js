@@ -1,43 +1,39 @@
 import React from "react"
 import { Link } from "gatsby"
+import PropTypes from "prop-types"
 
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap"
+import { Navbar, Nav, Container } from "react-bootstrap"
 
-const CustomNavbar = ({ pageInfo }) => {
-  console.log(pageInfo)
+const CustomNavbar = ({ siteTitle, pageInfo }) => {
   return (
     <>
-      <Navbar variant="dark" expand="lg" id="site-navbar">
-        {/* <Container> */}
-        <Link to="/" className="link-no-style">
-          <Navbar.Brand as="span">Gatsby React Bootstrap</Navbar.Brand>
-        </Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}>
-            <Link to="/page-2" className="link-no-style">
-              <Nav.Link as="span" eventKey="page-2">
-                Page 2
-              </Nav.Link>
-            </Link>
-          </Nav>
-          <Nav className="ml-auto">
-            <Form inline onSubmit={e => e.preventDefault()}>
-              <Form.Group>
-                <FormControl
-                  type="text"
-                  placeholder="Fake Search"
-                  className="mr-2"
-                />
-              </Form.Group>
-              <Button>Fake Button</Button>
-            </Form>
-          </Nav>
-        </Navbar.Collapse>
-        {/* </Container> */}
+      <Navbar variant="dark" expand="lg" id="site-navbar" className="bg-dark">
+        <Container>
+          <Link to="/" className="link-no-style">
+            <Navbar.Brand as="span">{siteTitle}</Navbar.Brand>
+          </Link>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}>
+              <Link to="/credits" className="link-no-style">
+                <Nav.Link as="span" eventKey="credits">
+                  Credits
+                </Nav.Link>
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
       </Navbar>
     </>
   )
+}
+
+CustomNavbar.propTypes = {
+  siteTitle: PropTypes.string,
+}
+
+CustomNavbar.defaultProps = {
+  siteTitle: ``,
 }
 
 export default CustomNavbar

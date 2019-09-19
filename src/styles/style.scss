@@ -1,5 +1,8 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+@import "typography";
 @import "layout";
 @import "navbar";
+@import "header";
+@import "footer";

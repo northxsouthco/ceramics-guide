@@ -2,19 +2,11 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import { Container } from "react-bootstrap"
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#20232a`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+  <header className="d-flex justify-content-center align-items-center">
+    <Container className="text-center">
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -26,7 +18,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
+    </Container>
   </header>
 )
 
