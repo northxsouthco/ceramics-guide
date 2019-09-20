@@ -1,0 +1,22 @@
+-
+  name: 3DPrinterOSs
+  url: https://www.3dprinteros.com/
+  level:
+    - Beginners
+    - Advanced Users
+  price: Freemium
+  os:
+    - Browser
+    - Windows
+    - Mac
+-
+  name: Cura
+  url: https://ultimaker.com/software/ultimaker-cura
+  level:
+    - Beginners
+    - Advanced Users
+  price: Free
+  os:
+    - Windows
+    - Mac
+    - Linux
