@@ -1,7 +1,9 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const createSchemaCustomization = ({ actions, schema }) => {
+  const { createTypes } = actions
+  const typeDefs = [
+    `type InspirationYaml implements Node { image: File @link(from: "id", by: "name") }`,
+  ]
+  createTypes(typeDefs)
+}
 
-// You can delete this file if you're not using it
+exports.createSchemaCustomization = createSchemaCustomization
