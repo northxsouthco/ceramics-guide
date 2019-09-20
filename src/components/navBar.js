@@ -6,7 +6,7 @@ import { Navbar, Nav, Container } from "react-bootstrap"
 
 const NavItem = ({ to, title }) => {
   return (
-    <Link to={to} className="link-no-style">
+    <Link to={`/` + to} className="link-no-style">
       <Nav.Link as="span" eventKey={to}>
         {title}
       </Nav.Link>
