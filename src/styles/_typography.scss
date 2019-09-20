@@ -6,13 +6,42 @@ svg {
   letter-spacing: 0.05em;
 }
 
+.font-family-accent {
+  font-family: $font-family-accent;
+  font-weight: 300;
+}
+
+h1, .pullquote {
+  @extend .font-family-accent;
+}
+
+loose-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 .pullquote {
-  font-size: 2em;
-  font-style: italic;
+  font-size: 2.75em;
+  line-height: 1.2;
 
   cite {
+    @extend loose-caps;
     font-style: normal;
-    @extend .text-uppercase;
-    font-size: 0.75em;
+    font-size: 0.65em;
+    display: block;
+    margin-top: 0.5em;
+  }
+}
+
+main {
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    margin-top: 1em;
+    @extend loose-caps;
+    @extend .font-family-accent;
   }
 }

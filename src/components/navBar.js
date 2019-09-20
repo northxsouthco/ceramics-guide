@@ -20,7 +20,9 @@ const CustomNavbar = ({ siteTitle, pageInfo }) => {
       <Navbar variant="dark" expand="lg" id="site-navbar" className="bg-dark">
         <Container>
           <Link to="/" className="link-no-style">
-            <Navbar.Brand as="span">{siteTitle}</Navbar.Brand>
+            <Navbar.Brand as="span" className="pb-0">
+              {siteTitle}
+            </Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

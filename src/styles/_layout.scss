@@ -14,6 +14,11 @@ body {
   }
 }
 
+.sticky-main {
+  position: sticky;
+  top: 80px;
+}
+
 a.link-no-style {
   &:hover {
     text-decoration: none;

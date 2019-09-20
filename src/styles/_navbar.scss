@@ -4,3 +4,8 @@
   top: 0;
   z-index: 100;
 }
+
+.navbar-brand {
+  @extend loose-caps;
+  @extend .font-family-accent;
+}
