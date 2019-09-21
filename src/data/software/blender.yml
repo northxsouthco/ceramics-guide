@@ -1,0 +1,13 @@
+name: Blender
+url: https://www.blender.org/
+level:
+  - Intermediate
+  - Advanced
+price: 
+  - Free
+os:
+  - Windows
+  - Mac
+  - Linux
+type:
+  - Modeling

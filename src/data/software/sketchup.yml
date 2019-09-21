@@ -1,0 +1,14 @@
+name: SketchUp
+url: https://www.sketchup.com
+level: 
+  - Beginner
+  - Intermediate
+price: 
+  - Freemium
+  - EDU discount
+os:
+  - Browser
+  - Windows
+  - Mac
+type:
+  - Modeling

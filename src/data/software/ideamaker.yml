@@ -1,0 +1,14 @@
+name: ideaMaker
+url: https://www.raise3d.com/ideamaker/
+level:
+  - Beginner
+  - Intermediate
+  - Advanced
+price: 
+  - Free
+os:
+  - Windows
+  - Mac
+  - Linux
+type:
+  - Slicing

@@ -2,6 +2,10 @@
   @extend %loose-caps;
   @extend .font-family-accent;
   margin-bottom: -0.15em;
+
+  .navbar-dark & {
+    color: desaturate(lighten($primary, 25%), 15%);
+  }
 }
 
 .nav-link {

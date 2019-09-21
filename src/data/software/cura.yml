@@ -1,0 +1,14 @@
+name: Cura
+url: https://ultimaker.com/software/ultimaker-cura
+level:
+  - Beginner
+  - Intermediate
+  - Advanced
+price: 
+  - Free
+os:
+  - Windows
+  - Mac
+  - Linux
+type:
+  - Slicing

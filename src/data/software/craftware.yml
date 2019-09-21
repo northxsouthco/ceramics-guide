@@ -1,0 +1,14 @@
+name: CraftWare
+url: https://craftbot.com/craftware/
+level:
+  - Beginner
+  - Intermediate
+  - Advanced
+price: 
+  - Free
+os:
+  - Windows
+  - Mac
+  - Linux
+type:
+  - Slicing

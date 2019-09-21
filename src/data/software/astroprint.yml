@@ -1,0 +1,14 @@
+name: Astroprint
+url: https://www.astroprint.com/
+level:
+  - Beginner
+  - Intermediate
+  - Advanced
+price: 
+  - Freemium
+os:
+  - Browser
+  - Raspberry Pi
+  - pcDuino
+type:
+  - Slicing

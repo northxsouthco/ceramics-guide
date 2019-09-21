@@ -1,0 +1,13 @@
+name: Repetier
+url: https://www.repetier.com/
+level:
+  - Intermediate
+  - Advanced
+price: 
+  - Free
+os:
+  - Windows
+  - Mac
+  - Linux
+type:
+  - Slicing

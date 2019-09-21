@@ -1,0 +1,14 @@
+name: OctoPrint
+url: https://octoprint.org/
+level:
+  - Intermediate
+  - Advanced
+price: 
+  - Free
+os:
+  - Windows
+  - Mac
+  - Linux
+  - Raspberry Pi
+type:
+  - Slicing

@@ -1,0 +1,16 @@
+name: KISSlicer
+url: http://www.kisslicer.com/
+level:
+  - Beginner
+  - Intermediate
+  - Advanced
+price:
+  - Freemium
+  - EDU discount
+os:
+  - Windows
+  - Mac
+  - Linux
+  - Raspberry Pi
+type:
+  - Slicing

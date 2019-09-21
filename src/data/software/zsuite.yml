@@ -1,0 +1,11 @@
+name: Z-Suite
+url: https://zortrax.com/software/
+level: 
+  - Beginner
+price: 
+  - Free
+os:
+  - Windows
+  - Mac
+type:
+  - Slicing

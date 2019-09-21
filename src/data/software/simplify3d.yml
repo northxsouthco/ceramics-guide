@@ -1,0 +1,13 @@
+name: Simplify3D
+url: https://www.simplify3d.com/
+level:
+  - Intermediate
+  - Advanced
+price:
+  - $150
+  - EDU discount
+os:
+  - Windows
+  - Mac
+type:
+  - Slicing

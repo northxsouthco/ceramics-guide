@@ -1,0 +1,11 @@
+name: MakerBot Print
+url: https://www.makerbot.com/3d-printers/apps/makerbot-print/
+level: 
+  - Beginner
+price: 
+  - Free
+os:
+  - Windows
+  - Mac
+type:
+  - Slicing

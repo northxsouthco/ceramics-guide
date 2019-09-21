@@ -1,0 +1,12 @@
+name: SelfCAD
+url: https://www.selfcad.com/
+level:
+  - Intermediate
+  - Advanced
+price:
+  - Free trial
+  - $9.99 per month
+os: 
+  - Browser
+type:
+  - Slicing

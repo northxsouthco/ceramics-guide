@@ -32,8 +32,9 @@ const CustomNavbar = ({ siteTitle, pageInfo }) => {
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}>
+            <Nav className="ml-auto" activeKey={pageInfo && pageInfo.pageName}>
               <NavItem to="inspiration" title="Inspiration" />
+              <NavItem to="software" title="Software" />
               <NavItem to="credits" title="Credits" />
             </Nav>
           </Navbar.Collapse>

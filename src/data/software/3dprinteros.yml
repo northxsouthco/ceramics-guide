@@ -1,0 +1,14 @@
+name: 3DPrinterOS
+url: https://www.3dprinteros.com/
+level:
+  - Beginner
+  - Intermediate
+  - Advanced
+price: 
+  - Freemium
+os:
+  - Browser
+  - Windows
+  - Mac
+type:
+  - Slicing

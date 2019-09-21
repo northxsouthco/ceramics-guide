@@ -1,0 +1,12 @@
+name: Slic3r
+url: https://slic3r.org/
+level:
+  - Advanced
+price: 
+  - Free
+os:
+  - Windows
+  - Mac
+  - Linux
+type:
+  - Slicing

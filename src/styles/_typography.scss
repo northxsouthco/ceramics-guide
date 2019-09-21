@@ -1,5 +1,6 @@
 html {
   font-size: 20px;
+  font-feature-settings: "lnum";
 }
 
 svg {
@@ -32,9 +33,12 @@ h1, .pullquote {
 }
 
 h2 {
-  margin-top: 1em;
   @extend %loose-caps;
   @extend .font-family-accent;
+
+  &:not(:first-child) {
+    margin-top: 1em;
+  }
 }
 
 @supports (background-clip: text) or (-webkit-background-clip: text) {

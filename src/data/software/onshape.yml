@@ -1,0 +1,11 @@
+name: Onshape
+url: https://www.onshape.com
+level:
+  - Advanced
+price:
+  - $1,500+
+  - Free for EDU
+os: 
+  - Browser
+type:
+  - Modeling

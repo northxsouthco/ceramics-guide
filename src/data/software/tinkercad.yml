@@ -1,0 +1,10 @@
+name: Tinkercad
+url: https://www.tinkercad.com
+level:
+  - Beginner
+price:
+  - Free
+os: 
+  - Browser
+type:
+  - Modeling

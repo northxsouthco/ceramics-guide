@@ -2,6 +2,7 @@ $terracotta:  #b3603e;
 $earthenware: #825648;
 $light:       #f5f1f1;
 $dark:        #3e3532;
+$oribe:       #86b796;
 
 $colors: ();
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -10,12 +11,14 @@ $colors: map-merge(
     "terracotta":  $terracotta,
     "earthenware": $earthenware,
     "light":       $light,
-    "dark":        $dark
+    "dark":        $dark,
+    "oribe":       $oribe
   ),
   $colors
 );
 
 $primary: $terracotta;
+$code-color: $oribe;
 
 $font-family-accent:           "Brixton Sans TC", Optima, sans-serif;
 $font-family-serif:            "Addington CF", Baskerville, serif;

@@ -1,0 +1,12 @@
+name: IceSL
+url: https://icesl.loria.fr/
+level: 
+  - Advanced
+price: 
+  - Free
+os:
+  - Windows
+  - Linux
+type:
+  - Slicing
+  - Modeling

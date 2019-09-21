@@ -1,0 +1,12 @@
+name: Netfabb Standard
+url: https://www.autodesk.com/products/netfabb/compare-products
+level:
+  - Intermediate
+  - Advanced
+price:
+  - $1,000 to $4,300
+  - Free for EDU
+os: 
+  - Windows
+type:
+  - Slicing
