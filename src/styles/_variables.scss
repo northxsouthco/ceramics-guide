@@ -1,8 +1,32 @@
-$terracotta: #b3603e;
+$terracotta:  #b3603e;
 $earthenware: #825648;
-$light: #f5f1f1;
-$dark: #3e3532;
+$light:       #f5f1f1;
+$dark:        #3e3532;
+
+$colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "terracotta":  $terracotta,
+    "earthenware": $earthenware,
+    "light":       $light,
+    "dark":        $dark
+  ),
+  $colors
+);
 
 $primary: $terracotta;
 
-$font-family-accent: "Brixton Sans TC", sans-serif;
+$font-family-accent:           "Brixton Sans TC", Optima, sans-serif;
+$font-family-serif:            "Addington CF", Baskerville, serif;
+
+$font-family-base:             $font-family-serif;
+$enable-responsive-font-sizes: true;
+
+$font-weight-light:            300;
+$font-weight-normal:           300;
+$font-weight-bold:             600;
+
+$h2-font-size:                 1.75rem;
+
+$spacer:                       15px;
