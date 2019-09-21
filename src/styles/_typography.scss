@@ -11,13 +11,30 @@ svg {
   font-weight: 300;
 }
 
+loose-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 h1, .pullquote {
   @extend .font-family-accent;
 }
 
-loose-caps {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  h1, h2, .pullquote {
+    background-image: url(../images/patterns/fresh-snow.png);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  h1, .pullquote {
+    background-color: $earthenware;
+  }
+
+  h2 {
+    background-color: $dark;
+  }
 }
 
 .pullquote {

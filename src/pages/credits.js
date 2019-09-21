@@ -59,6 +59,24 @@ const Colophon = () => (
           from Instagram and &copy; their respective creators; each image links
           back to the original post.
         </p>
+        <p>
+          Headings and pullquotes in supported browsers use the "Fresh Snow"
+          texture originally created by{" "}
+          <a
+            href="http://www.fotokaarten.nl/kerst.html"
+            rel="noopener noreferrer"
+          >
+            Kerstkaarten
+          </a>{" "}
+          and modified at{" "}
+          <a
+            href="https://www.transparenttextures.com/"
+            rel="noopener noreferrer"
+          >
+            Transparent Textures
+          </a>
+          .
+        </p>
       </Col>
     </Row>
   </Layout>
