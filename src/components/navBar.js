@@ -17,7 +17,13 @@ const NavItem = ({ to, title }) => {
 const CustomNavbar = ({ siteTitle, pageInfo }) => {
   return (
     <>
-      <Navbar variant="dark" expand="lg" id="site-navbar" className="bg-dark">
+      <Navbar
+        variant="dark"
+        expand="lg"
+        id="site-navbar"
+        className="bg-dark"
+        sticky="top"
+      >
         <Container>
           <Link to="/" className="link-no-style">
             <Navbar.Brand as="span" className="pb-0">
