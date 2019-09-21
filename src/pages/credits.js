@@ -15,13 +15,19 @@ const Colophon = () => (
       </Col>
       <Col>
         <p>
-          Designed by <a href="https://www.northxsouth.co">Stephy Miehle</a>, a
-          digital media instructor and ceramics student at MCC.
+          Designed by{" "}
+          <a href="https://www.northxsouth.co" rel="noopener noreferrer">
+            Stephy Miehle
+          </a>
+          , a digital media instructor and ceramics student at MCC.
         </p>
         <h2>Technology</h2>
         <p>
           Built with <a href="https://www.gatsbyjs.org">Gatsby</a> using{" "}
-          <a href="https://github.com/billyjacoby/gatsby-react-bootstrap-starter">
+          <a
+            href="https://github.com/billyjacoby/gatsby-react-bootstrap-starter"
+            rel="noopener noreferrer"
+          >
             Gatsby React Bootstrap Starter
           </a>
           .

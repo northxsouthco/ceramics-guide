@@ -70,6 +70,7 @@ const Inspo = () => {
             <a
               href={`https://www.instagram.com/p/${node.image.name}`}
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Card>
                 <Img
