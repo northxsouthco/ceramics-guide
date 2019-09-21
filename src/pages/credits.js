@@ -28,12 +28,20 @@ const Colophon = () => (
         </p>
         <h2>Typography</h2>
         <p>
-          Heading font <strong>Brixton Sans</strong> &copy;{" "}
+          Body font <strong>Addington CF</strong> &copy;{" "}
+          <a
+            href="https://www.coroflot.com/connary/portfolio"
+            rel="noopener noreferrer"
+          >
+            Connary Fagen
+          </a>{" "}
+          and licensed for this project. Heading font{" "}
+          <strong>Brixton Sans</strong> &copy;{" "}
           <a href="https://tomchalky.com" rel="noopener noreferrer">
             Tom Chalky
           </a>{" "}
           and licensed for this project. Regretfully, any forks of this project
-          without a webfont license will likely look strange and require some
+          without webfont licenses will likely look strange and require some
           modifications.
         </p>
         <h2>Images</h2>
@@ -74,6 +82,14 @@ const Colophon = () => (
             rel="noopener noreferrer"
           >
             Transparent Textures
+          </a>
+          . Pullquotes also use a background sourced from a Persian bowl with a
+          turquoise glaze, via{" "}
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Persian_Ceramic_Bowl_with_Turquoise_Glaze.jpg"
+            rel="noopener noreferrer"
+          >
+            Tangerineduel on Wikimedia
           </a>
           .
         </p>

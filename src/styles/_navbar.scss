@@ -1,5 +1,5 @@
 .navbar-brand {
-  @extend loose-caps;
+  @extend %loose-caps;
   @extend .font-family-accent;
   margin-bottom: -0.15em;
 }

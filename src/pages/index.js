@@ -11,7 +11,7 @@ const IndexPage = () => (
     <Row>
       <Col lg="8" className="mx-auto">
         <blockquote className="pullquote">
-          The art challenges the technology, and the technology inspires the
+          The art challenges the technology &amp; the technology inspires the
           art.
           <cite className="d-block">&mdash;&thinsp;John Lasseter</cite>
         </blockquote>

@@ -15,9 +15,16 @@ svg {
   font-weight: 300;
 }
 
-loose-caps {
+%loose-caps {
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+%background-clip-text {
+  // The BACKGROUND property must be declared before this @extend
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 h1, .pullquote {
@@ -26,33 +33,37 @@ h1, .pullquote {
 
 h2 {
   margin-top: 1em;
-  @extend loose-caps;
+  @extend %loose-caps;
   @extend .font-family-accent;
 }
 
 @supports (background-clip: text) or (-webkit-background-clip: text) {
-  h1, h2, .pullquote {
+  h1, h2, .pullquote cite {
     background-image: url(../images/patterns/fresh-snow.png);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    @extend %background-clip-text;
   }
 
-  h1, .pullquote {
+  h1, .pullquote cite {
     background-color: $earthenware;
   }
 
   h2 {
     background-color: $dark;
   }
+
+  .pullquote {
+    background-image: url(../images/pullquote-bg.png);
+    background-size: cover;
+    @extend %background-clip-text;
+  }
 }
 
 .pullquote {
-  font-size: 2.75em;
+  font-size: 2.65em;
   line-height: 1.2;
 
   cite {
-    @extend loose-caps;
+    @extend %loose-caps;
     font-style: normal;
     font-size: 0.65em;
     display: block;
