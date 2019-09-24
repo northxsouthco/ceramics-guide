@@ -6,6 +6,7 @@ module.exports = {
     author: `Stephy Miehle`,
   },
   plugins: [
+    `gatsby-plugin-resolve-src`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-yaml`,
     {

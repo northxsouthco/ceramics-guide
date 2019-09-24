@@ -4,9 +4,9 @@ import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import { FaExclamationCircle } from "react-icons/fa"
 
-import Layout from "../../components/layout"
-import Definition from "../../components/definition"
-import SEO from "../../components/seo"
+import Layout from "components/Layout"
+import Definition from "components/Definition"
+import SEO from "components/SEO"
 
 const Potterware = ({ data }) => {
   const allImages = data.allFile.edges.reduce((ret, { node }) => {
