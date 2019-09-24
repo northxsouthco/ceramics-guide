@@ -50,7 +50,7 @@ const Software = ({ data }) => {
         </thead>
         <tbody>
           {modeling.map(({ node }) => (
-            <tr>
+            <tr key={node.name}>
               <td>
                 <a href={node.url} rel="noopener noreferrer">
                   {node.name}
@@ -88,7 +88,7 @@ const Software = ({ data }) => {
         </thead>
         <tbody>
           {slicing.map(({ node }) => (
-            <tr>
+            <tr key={node.name}>
               <td>
                 <a href={node.url} rel="noopener noreferrer">
                   {node.name}
