@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import { Row, Col } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap";
 
 const Definition = ({ term, children, md = 3, lg = 2, ...rest }) => {
   return (
@@ -10,7 +10,7 @@ const Definition = ({ term, children, md = 3, lg = 2, ...rest }) => {
       </Col>
       <Col as="dd">{children}</Col>
     </Row>
-  )
-}
+  );
+};
 
-export default Definition
+export default Definition;

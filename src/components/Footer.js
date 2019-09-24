@@ -1,11 +1,11 @@
-import { Link } from "gatsby"
-import React from "react"
+import { Link } from "gatsby";
+import React from "react";
 import {
   FaCreativeCommons,
   FaCreativeCommonsBy,
   FaCreativeCommonsSa,
-} from "react-icons/fa"
-import { Container } from "react-bootstrap"
+} from "react-icons/fa";
+import { Container } from "react-bootstrap";
 
 const Footer = () => (
   <footer className="bg-light mt-5">
@@ -33,6 +33,6 @@ const Footer = () => (
       </p>
     </Container>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

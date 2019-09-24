@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Row, Col, Card, ListGroup } from "react-bootstrap"
+import React from "react";
+import { Link } from "gatsby";
+import { Row, Col, Card, ListGroup } from "react-bootstrap";
 
-import Layout from "components/Layout"
-import SEO from "components/SEO"
+import Layout from "components/Layout";
+import SEO from "components/SEO";
 
 const Tutorials = () => {
   return (
@@ -48,7 +48,7 @@ const Tutorials = () => {
         </Col>
       </Row>
     </Layout>
-  )
-}
+  );
+};
 
-export default Tutorials
+export default Tutorials;

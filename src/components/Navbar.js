@@ -1,24 +1,24 @@
-import React from "react"
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+import React from "react";
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
 
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap"
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 
 const NavItem = ({ to, title }) => {
   return (
-    <Nav.Link as={Link} eventKey={to} to={`/` + to}>
+    <Nav.Link as={Link} eventKey={to} to={`/${to}`}>
       {title}
     </Nav.Link>
-  )
-}
+  );
+};
 
 const NavDropItem = ({ to, title }) => {
   return (
-    <NavDropdown.Item as={Link} eventKey={to} to={`/` + to}>
+    <NavDropdown.Item as={Link} eventKey={to} to={`/${to}`}>
       {title}
     </NavDropdown.Item>
-  )
-}
+  );
+};
 
 const CustomNavbar = ({ siteTitle, pageInfo }) => {
   return (
@@ -52,15 +52,15 @@ const CustomNavbar = ({ siteTitle, pageInfo }) => {
         </Container>
       </Navbar>
     </>
-  )
-}
+  );
+};
 
 CustomNavbar.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 CustomNavbar.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default CustomNavbar
+export default CustomNavbar;

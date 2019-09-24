@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
-import { Row, Col } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap";
 
-import Layout from "components/Layout"
-import SEO from "components/SEO"
+import Layout from "components/Layout";
+import SEO from "components/SEO";
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
@@ -26,6 +26,6 @@ const IndexPage = () => (
       </Col>
     </Row>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

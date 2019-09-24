@@ -1,10 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
-import { FaCreativeCommons } from "react-icons/fa"
-import { Row, Col } from "react-bootstrap"
+import React from "react";
+import { Link } from "gatsby";
+import { FaCreativeCommons } from "react-icons/fa";
+import { Row, Col } from "react-bootstrap";
 
-import Layout from "components/Layout"
-import SEO from "components/SEO"
+import Layout from "components/Layout";
+import SEO from "components/SEO";
 
 const Colophon = () => (
   <Layout pageInfo={{ pageName: "credits" }}>
@@ -116,6 +116,6 @@ const Colophon = () => (
       </Col>
     </Row>
   </Layout>
-)
+);
 
-export default Colophon
+export default Colophon;

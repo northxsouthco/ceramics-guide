@@ -1,18 +1,20 @@
-import React from "react"
-import { Button, Row, Col, Card, CardImg, Alert } from "react-bootstrap"
-import Img from "gatsby-image"
-import { graphql } from "gatsby"
-import { FaExclamationCircle } from "react-icons/fa"
+import React from "react";
+import { Button, Row, Col, Card, CardImg, Alert } from "react-bootstrap";
+import Img from "gatsby-image";
+import { graphql } from "gatsby";
+import { FaExclamationCircle } from "react-icons/fa";
 
-import Layout from "components/Layout"
-import Definition from "components/Definition"
-import SEO from "components/SEO"
+import Layout from "components/Layout";
+import Definition from "components/Definition";
+import SEO from "components/SEO";
 
 const Potterware = ({ data }) => {
   const allImages = data.allFile.edges.reduce((ret, { node }) => {
-    ret[node.name] = node
-    return ret
-  }, {})
+    // This is actually ok.. see https://github.com/airbnb/javascript/issues/719
+    // eslint-disable-next-line no-param-reassign
+    ret[node.name] = node;
+    return ret;
+  }, {});
   return (
     <Layout pageInfo={{ pageName: "potterware" }}>
       <SEO title="Potterware" />
@@ -107,14 +109,14 @@ const Potterware = ({ data }) => {
         <Row className="mt-3">
           <Col sm="6">
             <Img
-              fluid={allImages["smooth"].childImageSharp.fluid}
+              fluid={allImages.smooth.childImageSharp.fluid}
               className="rounded shadow"
               alt="Smooth profile"
             />
           </Col>
           <Col sm="6">
             <Img
-              fluid={allImages["angular"].childImageSharp.fluid}
+              fluid={allImages.angular.childImageSharp.fluid}
               className="rounded shadow"
               alt="Angular profile"
             />
@@ -132,10 +134,7 @@ const Potterware = ({ data }) => {
         <Row className="mt-3">
           <Col sm="4" className="my-3">
             <Card className="shadow border-0">
-              <CardImg
-                as={Img}
-                fluid={allImages["none"].childImageSharp.fluid}
-              />
+              <CardImg as={Img} fluid={allImages.none.childImageSharp.fluid} />
               <Card.Footer className="p-2 small border-0 bg-white">
                 <span className="smcp">None</span> creates a smooth circle
               </Card.Footer>
@@ -145,7 +144,7 @@ const Potterware = ({ data }) => {
             <Card className="shadow border-0">
               <CardImg
                 as={Img}
-                fluid={allImages["sinewave"].childImageSharp.fluid}
+                fluid={allImages.sinewave.childImageSharp.fluid}
               />
               <Card.Footer className="p-2 small border-0 bg-white">
                 <span className="smcp">Sinewave</span> uses gentle waves
@@ -156,7 +155,7 @@ const Potterware = ({ data }) => {
             <Card className="shadow border-0">
               <CardImg
                 as={Img}
-                fluid={allImages["sawtooth"].childImageSharp.fluid}
+                fluid={allImages.sawtooth.childImageSharp.fluid}
               />
               <Card.Footer className="p-2 small border-0 bg-white">
                 <span className="smcp">Sawtooth</span> makes angular cuts
@@ -167,7 +166,7 @@ const Potterware = ({ data }) => {
             <Card className="shadow border-0">
               <CardImg
                 as={Img}
-                fluid={allImages["square"].childImageSharp.fluid}
+                fluid={allImages.square.childImageSharp.fluid}
               />
               <Card.Footer className="p-2 small border-0 bg-white">
                 <span className="smcp">Square</span> has notched edges
@@ -178,7 +177,7 @@ const Potterware = ({ data }) => {
             <Card className="shadow border-0">
               <CardImg
                 as={Img}
-                fluid={allImages["jitter"].childImageSharp.fluid}
+                fluid={allImages.jitter.childImageSharp.fluid}
               />
               <Card.Footer className="p-2 small border-0 bg-white">
                 <span className="smcp">Jitter</span> generates random-looking,
@@ -301,8 +300,8 @@ const Potterware = ({ data }) => {
         </Row>
       </Alert>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query FetchPotterwareImage {
@@ -324,6 +323,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default Potterware
+export default Potterware;

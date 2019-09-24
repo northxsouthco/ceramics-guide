@@ -1,12 +1,12 @@
-import React from "react"
+import React from "react";
 
-import { Row, Col, Card } from "react-bootstrap"
+import { Row, Col, Card } from "react-bootstrap";
 
-import Layout from "components/Layout"
-import SEO from "components/SEO"
+import Layout from "components/Layout";
+import SEO from "components/SEO";
 
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 const Inspo = () => {
   const data = useStaticQuery(graphql`
@@ -29,9 +29,9 @@ const Inspo = () => {
         }
       }
     }
-  `)
+  `);
 
-  const images = data.allFile.edges
+  const images = data.allFile.edges;
   return (
     <Layout pageInfo={{ pageName: "inspiration" }}>
       <SEO title="Inspiration" />
@@ -89,7 +89,7 @@ const Inspo = () => {
         ))}
       </Row>
     </Layout>
-  )
-}
+  );
+};
 
-export default Inspo
+export default Inspo;

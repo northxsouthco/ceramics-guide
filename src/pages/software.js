@@ -1,20 +1,20 @@
-import React from "react"
+import React from "react";
 
-import { Table, Row, Col } from "react-bootstrap"
+import { Table, Row, Col } from "react-bootstrap";
 
-import Layout from "components/Layout"
-import SEO from "components/SEO"
+import Layout from "components/Layout";
+import SEO from "components/SEO";
 
-import { graphql } from "gatsby"
+import { graphql } from "gatsby";
 
 const Software = ({ data }) => {
   const slicing = data.allSoftwareYaml.edges.filter(({ node }) =>
     node.type.includes("Slicing")
-  )
+  );
 
   const modeling = data.allSoftwareYaml.edges.filter(({ node }) =>
     node.type.includes("Modeling")
-  )
+  );
 
   return (
     <Layout pageInfo={{ pageName: "software" }}>
@@ -112,10 +112,10 @@ const Software = ({ data }) => {
         .
       </p>
     </Layout>
-  )
-}
+  );
+};
 
-export default Software
+export default Software;
 
 export const query = graphql`
   query FetchSoftware {
@@ -132,4 +132,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

@@ -11,7 +11,6 @@
     "gatsby-plugin-manifest": "^2.2.18",
     "gatsby-plugin-offline": "^3.0.8",
     "gatsby-plugin-react-helmet": "^3.1.8",
-    "gatsby-plugin-resolve-src": "^2.0.0",
     "gatsby-plugin-sass": "^2.1.15",
     "gatsby-plugin-sharp": "^2.2.25",
     "gatsby-source-filesystem": "^2.1.26",
@@ -25,8 +24,16 @@
     "react-icons": "^3.7.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "gatsby-transformer-yaml": "^2.2.10",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3"
   },
   "keywords": [
     "gatsby"
@@ -36,6 +43,9 @@
     "build": "gatsby build",
     "develop": "gatsby develop -H 0.0.0.0 -p 8000",
     "format": "prettier --write src/**/*.{js,jsx}",
+    "lint": "yarn run lint:js",
+    "lint:js": "eslint src --ext .js,.jsx --ignore-path .gitignore",
+    "clean": "gatsby clean",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
