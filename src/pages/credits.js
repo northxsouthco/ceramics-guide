@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 import { FaCreativeCommons } from "react-icons/fa"
 import { Row, Col } from "react-bootstrap"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 const Colophon = () => (
   <Layout pageInfo={{ pageName: "credits" }}>
