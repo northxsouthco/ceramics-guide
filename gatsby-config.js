@@ -37,6 +37,13 @@ module.exports = {
         icon: `src/images/favicon.svg`,
       },
     },
-    `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "/*": ["Referrer-Policy: strict-origin-when-cross-origin"],
+        },
+      },
+    },
   ],
 };
