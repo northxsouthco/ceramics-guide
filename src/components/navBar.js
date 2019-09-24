@@ -2,14 +2,22 @@ import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
-import { Navbar, Nav, Container } from "react-bootstrap"
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap"
 
 const NavItem = ({ to, title }) => {
   return (
+    <Nav.Link as={Link} eventKey={to} to={`/` + to}>
+      {title}
+    </Nav.Link>
+  )
+}
+
+const NavDropItem = ({ to, title }) => {
+  return (
     <Link to={`/` + to} className="link-no-style">
-      <Nav.Link as="span" eventKey={to}>
+      <NavDropdown.Item as="span" eventKey={to}>
         {title}
-      </Nav.Link>
+      </NavDropdown.Item>
     </Link>
   )
 }
@@ -21,8 +29,9 @@ const CustomNavbar = ({ siteTitle, pageInfo }) => {
         variant="dark"
         expand="lg"
         id="site-navbar"
-        className="bg-dark"
+        className="bg-dark py-0"
         sticky="top"
+        collapseOnSelect
       >
         <Container>
           <Link to="/" className="link-no-style">
@@ -30,12 +39,15 @@ const CustomNavbar = ({ siteTitle, pageInfo }) => {
               {siteTitle}
             </Navbar.Brand>
           </Link>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Toggle aria-controls="primary-nav" />
+          <Navbar.Collapse id="primary-nav">
             <Nav className="ml-auto" activeKey={pageInfo && pageInfo.pageName}>
               <NavItem to="inspiration" title="Inspiration" />
               <NavItem to="software" title="Software" />
               <NavItem to="credits" title="Credits" />
+              <NavDropdown title="Tutorials" id="tut-dropdown">
+                <NavDropItem to="tutorials/potterware" title="Potterware" />
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>
