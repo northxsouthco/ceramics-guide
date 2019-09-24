@@ -2,7 +2,7 @@
   "name": "gatsby-starter-react-bootstrap",
   "private": true,
   "description": "Resources for MCC ceramics students, based on gatsby-starter-react-bootstrap ",
-  "version": "0.1.0",
+  "version": "12.10.0",
   "author": "Stephy Miehle <stephy@northxsouth.co>",
   "dependencies": {
     "bootstrap": "^4.3.1",
