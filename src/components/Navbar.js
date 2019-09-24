@@ -6,7 +6,7 @@ import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 
 const NavItem = ({ to, title }) => {
   return (
-    <Nav.Link as={Link} eventKey={to} to={`/${to}`}>
+    <Nav.Link as={Link} eventKey={to} to={`/${to}/`}>
       {title}
     </Nav.Link>
   );
@@ -14,7 +14,7 @@ const NavItem = ({ to, title }) => {
 
 const NavDropItem = ({ to, title }) => {
   return (
-    <NavDropdown.Item as={Link} eventKey={to} to={`/${to}`}>
+    <NavDropdown.Item as={Link} eventKey={to} to={`/${to}/`}>
       {title}
     </NavDropdown.Item>
   );

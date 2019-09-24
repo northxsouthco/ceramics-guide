@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/gatsby-react-bootstrap-starter",
+  pathPrefix: "/",
   siteMetadata: {
     title: `3D Ceramics at MCC`,
     description: `Resources for MCC ceramics students`,
