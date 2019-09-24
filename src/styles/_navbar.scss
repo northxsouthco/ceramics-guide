@@ -1,13 +1,24 @@
 .navbar-brand {
   @extend %loose-caps;
   @extend .font-family-accent;
-  margin-bottom: -0.15em;
 
   .navbar-dark & {
     color: desaturate(lighten($primary, 25%), 15%);
   }
 }
 
-.nav-link {
-  line-height: 1;
+.dropdown {
+  &:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+
+  &-menu {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    min-width: unset;
+    background-color: lighten($dark, 7.5%);
+    border: 0;
+    text-align: left;
+  }
 }

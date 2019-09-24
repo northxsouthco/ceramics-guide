@@ -74,3 +74,13 @@ h2 {
     margin-top: 0.5em;
   }
 }
+
+dt {
+  font-style: italic;
+  @extend .text-muted;
+}
+
+.smcp {
+  font-feature-settings: "smcp";
+  letter-spacing: 0.1em;
+}
