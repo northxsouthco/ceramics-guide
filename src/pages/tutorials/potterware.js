@@ -288,7 +288,7 @@ const Potterware = ({ data }) => {
             <FaExclamationCircle size="3em" />
           </Col>
           <Col>
-            <p className="lead">
+            <p className="lead mb-2">
               You <strong>CANNOT</strong> open your saved file to make changes!
             </p>
             <p className="mb-0">
