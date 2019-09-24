@@ -28,12 +28,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-react-bootstrap`,
-        short_name: `react-bootstrap`,
+        name: `3D Ceramics at MCC`,
+        short_name: `MCC Ceramics`,
         start_url: `/`,
-        background_color: `#20232a`,
-        theme_color: `#20232a`,
+        background_color: `#3d3531`,
+        theme_color: `#3d3531`,
         display: `minimal-ui`,
+        icon: `src/images/favicon.svg`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
