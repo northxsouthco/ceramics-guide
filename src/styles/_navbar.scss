@@ -17,8 +17,10 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     min-width: unset;
-    background-color: lighten($dark, 7.5%);
     border: 0;
     text-align: left;
+    background: repeat-x url(../images/patterns/dot-line-border.svg) top 2px center / 6px,
+                repeat-x url(../images/patterns/dot-line-border-bottom.svg) bottom 2px center / 6px,
+                lighten($dark, 7.5%);
   }
 }

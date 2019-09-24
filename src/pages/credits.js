@@ -66,6 +66,10 @@ const Colophon = () => (
           >
             Cory Doctorow
           </a>
+          . Footer scalloped border image designed by{" "}
+          <a href="http://www.freepik.com" rel="noopener noreferrer">
+            0melapics on Freepik
+          </a>
           .
         </p>
         <p>

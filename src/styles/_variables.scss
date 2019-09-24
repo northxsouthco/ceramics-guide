@@ -42,6 +42,7 @@ $spacer:                       15px;
 $caret-vertical-align:         0.175em;
 $dropdown-link-color:          rgba(white, .5);
 $dropdown-item-padding-x:      $spacer;
-$dropdown-padding-y:           $spacer / 2;
+$dropdown-padding-y:           8px;
 $dropdown-link-hover-bg:       lighten($dark, 20%);
 $dropdown-link-hover-color:    #fff;
+$dropdown-link-active-bg:      saturate($dropdown-link-hover-bg, 5%);

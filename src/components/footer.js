@@ -8,7 +8,7 @@ import {
 import { Container } from "react-bootstrap"
 
 const Footer = () => (
-  <footer className="bg-light mt-5 py-4">
+  <footer className="bg-light mt-5">
     <Container>
       <p className="text-center lead mb-2">
         <a
