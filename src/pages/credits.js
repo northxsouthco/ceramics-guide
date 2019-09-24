@@ -99,6 +99,16 @@ const Colophon = () => (
           </a>
           .
         </p>
+        <p>
+          Favicon by{" "}
+          <a
+            href="https://www.flaticon.com/free-icon/pottery_1116680"
+            rel="noopener noreferrer"
+          >
+            Eucalyp on FlatIcon
+          </a>{" "}
+          and used with permission.
+        </p>
       </Col>
     </Row>
   </Layout>
