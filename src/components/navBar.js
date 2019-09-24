@@ -14,11 +14,9 @@ const NavItem = ({ to, title }) => {
 
 const NavDropItem = ({ to, title }) => {
   return (
-    <Link to={`/` + to} className="link-no-style">
-      <NavDropdown.Item as="span" eventKey={to}>
-        {title}
-      </NavDropdown.Item>
-    </Link>
+    <NavDropdown.Item as={Link} eventKey={to} to={`/` + to}>
+      {title}
+    </NavDropdown.Item>
   )
 }
 
@@ -29,7 +27,7 @@ const CustomNavbar = ({ siteTitle, pageInfo }) => {
         variant="dark"
         expand="lg"
         id="site-navbar"
-        className="bg-dark py-0"
+        className="bg-dark py-2 py-lg-0"
         sticky="top"
         collapseOnSelect
       >
@@ -46,6 +44,7 @@ const CustomNavbar = ({ siteTitle, pageInfo }) => {
               <NavItem to="software" title="Software" />
               <NavItem to="credits" title="Credits" />
               <NavDropdown title="Tutorials" id="tut-dropdown">
+                <NavDropItem to="tutorials" title="General Resources" />
                 <NavDropItem to="tutorials/potterware" title="Potterware" />
               </NavDropdown>
             </Nav>
