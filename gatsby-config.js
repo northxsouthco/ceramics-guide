@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: `3D Ceramics at MCC`,
     description: `Resources for MCC ceramics students`,
-    author: `Stephy Miehle`,
+    author: `stephymiehle`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
