@@ -37,8 +37,8 @@ const Potterware = ({ data }) => {
       >
         Launch Potterware
       </Button>
-      <Row className="mt-5 pt-5">
-        <Col>
+      <Row className="mt-5 pt-5 flex-wrap">
+        <Col xs="12" md className="mb-4 mb-md-0">
           <h2>Select Printer Type</h2>
           <p>
             The most important step is selecting the correct Printer Type from
