@@ -75,6 +75,23 @@ h2 {
   }
 }
 
+@each $theme, $color in (info: $info) {
+  .alert-#{$theme} {
+    a {
+      color: inherit;
+      text-decoration: underline;
+
+      &:hover {
+        color: darken($color, 50%);
+      }
+    }
+  }
+}
+
+.text-info {
+  color: var(--info);
+}
+
 dt {
   font-style: italic;
   @extend .text-muted;
@@ -83,4 +100,5 @@ dt {
 .smcp {
   font-feature-settings: "smcp";
   letter-spacing: 0.1em;
+  color: var(--info);
 }

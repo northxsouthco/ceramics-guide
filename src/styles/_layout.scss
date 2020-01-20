@@ -24,3 +24,13 @@ a.link-no-style {
     text-decoration: none;
   }
 }
+
+dl.row + dl.row {
+  border-top: 2px dotted #dedddc;
+  padding-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+dd > :last-child {
+  margin-bottom: 0;
+}
