@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Row, Col, Card } from "react-bootstrap";
+import { Row, Col, Card, Button } from "react-bootstrap";
 
 import Layout from "components/Layout";
 import SEO from "components/SEO";
@@ -64,7 +64,18 @@ const Inspo = () => {
         </a>
         .
       </p>
-      <Row className="mt-4">
+      <p>
+        For Potterware-specific examples, view the projects and their parameters
+        on Notion:
+      </p>
+      <Button
+        href="https://www.notion.so/a545e30a662d4c74bd2bc9c016e0286c?v=f02c082ecd1c4fe3ab785c05d0120c89"
+        rel="nooopener noreferrer"
+        target="_blank"
+      >
+        View Potterware Examples
+      </Button>
+      <Row className="mt-5 pt-5">
         {images.map(({ node }) => (
           <Col key={node.id} xs="12" sm="6" md="4" lg="3" className="mb-4">
             <a

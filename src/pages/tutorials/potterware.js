@@ -30,14 +30,22 @@ const Potterware = ({ data }) => {
         your design. Luckily, all of the math is worked out for you. Contact
         your instructor to learn how to log in.
       </p>
-      <Button
-        href="http://www.emergingobjects.com/potterware"
-        rel="nooopener noreferrer"
-        target="_blank"
-        className="mb-5"
-      >
-        Launch Potterware
-      </Button>
+      <div className="mb-5">
+        <Button
+          href="http://www.emergingobjects.com/potterware"
+          rel="nooopener noreferrer"
+          target="_blank"
+        >
+          Launch Potterware
+        </Button>{" "}
+        <Button
+          href="https://www.notion.so/a545e30a662d4c74bd2bc9c016e0286c?v=f02c082ecd1c4fe3ab785c05d0120c89"
+          rel="nooopener noreferrer"
+          target="_blank"
+        >
+          View Potterware Examples
+        </Button>
+      </div>
 
       <section>
         <h2>Initial Settings</h2>
