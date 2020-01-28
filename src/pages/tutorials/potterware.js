@@ -32,7 +32,7 @@ const Potterware = ({ data }) => {
       </p>
       <div className="mb-5">
         <Button
-          href="http://www.emergingobjects.com/potterware"
+          href="http://www.emergingobjects.com/potterware/membership-login/"
           rel="nooopener noreferrer"
           target="_blank"
         >
